@@ -5,6 +5,10 @@ on:
   push:
     branches: ["main"]
 
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   frontend:
     runs-on: ubuntu-latest
@@ -24,7 +28,10 @@ jobs:
           cache-dependency-path: mistral-dashboard/package-lock.json
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install
+
+      - name: Typecheck
+        run: npm run typecheck
 
       - name: Lint
         run: npm run lint

@@ -1,25 +1,37 @@
-# ECHOCLASH - Mistral Dashboard
+# EchoClash Dashboard (Next.js)
 
-This is the main Next.js application for ECHOCLASH, built for the Mistral Worldwide Hackathon.
+This is the web client for EchoClash.
 
-## Getting Started
-
-First, run the development server:
+## Quick Start
 
 ```bash
+cp .env.example .env.local
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Scripts
 
-## Learn More
+- `npm run dev` – local dev server
+- `npm run typecheck` – TypeScript checks
+- `npm run lint` – ESLint checks
+- `npm run build` – production build
+- `npm run start` – run production server
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Mistral AI](https://mistral.ai/) - powerful language models
-- [ElevenLabs](https://elevenlabs.io/) - AI voice generator
+## Health Endpoint
+
+- `GET /api/health` returns service health JSON.
+
+## Deployment
+
+A container baseline is provided:
+
+```bash
+docker build -t echoclash-dashboard .
+docker run --env-file .env -p 3000:3000 echoclash-dashboard
+```
+
+For architecture and production roadmap details see:
+
+- `docs/architecture-audit.md`
+- `docs/production-readiness.md`

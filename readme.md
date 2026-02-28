@@ -1,4 +1,4 @@
-# ECHOCLASH
+# EchoClash
 
 <p align="left">
   <img src="https://img.shields.io/badge/Mistral_AI-FF7000?style=for-the-badge&logo=mistral&logoColor=white" alt="Mistral AI" />
@@ -43,4 +43,5 @@ Open [http://localhost:3000](http://localhost:3000) to view the application in y
 ## Hackathon Details
 
 Built for the **Mistral Worldwide hackathon - Online edition**. 
+
 Focus: *Best Voice Use Case* and *Best Video Game Project*.

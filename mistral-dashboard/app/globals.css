@@ -1,0 +1,54 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono&display=swap');
+
+@theme {
+  --color-bg: #0d0d0d;
+  --color-card: #141414;
+  --color-border: #252525;
+  --color-hover: #1e1e1e;
+  --color-primary: #f0f0f0;
+  --color-secondary: #888888;
+  --color-accent: #3b82f6;
+
+  --radius-card: 12px;
+  --radius-tag: 8px;
+
+  --font-sans: "Inter", "sans-serif";
+  --font-mono: "Geist Mono", "monospace";
+}
+
+:root {
+  --bg: #0d0d0d;
+  --card: #141414;
+  --border: #252525;
+  --hover: #1e1e1e;
+  --primary: #f0f0f0;
+  --secondary: #888888;
+  --accent: #3b82f6;
+  --radius-card: 12px;
+  --radius-tag: 8px;
+}
+
+html, body, #__next {
+  height: 100%;
+  background: var(--bg);
+  color: var(--primary);
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* metric / numbers */
+.metric, .number {
+  font-family: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace;
+}
+
+/* subtle separators */
+.hr-subtle {
+  height: 1px;
+  background: var(--border);
+}

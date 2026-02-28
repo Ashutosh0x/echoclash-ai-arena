@@ -45,3 +45,10 @@ Open [http://localhost:3000](http://localhost:3000) to view the application in y
 Built for the **Mistral Worldwide hackathon - Online edition**. 
 
 Focus: *Best Voice Use Case* and *Best Video Game Project*.
+
+
+## Architecture Audit & Roadmap
+
+A production-readiness audit with prioritized improvements is available at:
+
+- `mistral-dashboard/docs/architecture-audit.md`

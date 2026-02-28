@@ -1,4 +1,4 @@
-# EchoClash
+# echoclash-ai-arena
 
 <p align="left">
   <img src="https://img.shields.io/badge/Mistral_AI-FF7000?style=for-the-badge&logo=mistral&logoColor=white" alt="Mistral AI" />
@@ -9,7 +9,7 @@
   <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
 </p>
 
-Voice-controlled AI battle arena prototype (Next.js frontend) with a production-readiness roadmap for realtime voice gameplay.
+Voice-Controlled AI Battle Arena — adaptive NPCs powered by Mistral, realtime voice via Voxtral, narrated by ElevenLabs.
 
 ## Project Structure
 

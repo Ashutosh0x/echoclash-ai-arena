@@ -9,6 +9,8 @@
   <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
 </p>
 
+### [🚀 Live Demo](https://mistral-dashboard-44oz102lm-ashutoshs-projects-754ff406.vercel.app)
+
 Voice-controlled AI battle arena prototype (Next.js frontend) with a production-readiness roadmap for realtime voice gameplay.
 
 ## Project Structure

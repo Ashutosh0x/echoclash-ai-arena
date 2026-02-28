@@ -9,39 +9,38 @@
   <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
 </p>
 
-A Voice-Controlled AI Battle Arena where you can speak your actions into reality. Features adaptive NPCs, infinite strategy, and seamless voice controls.
-
-## Tech Stack
-
-- **Framework**: Next.js
-- **AI Models**: Mistral & Voxtral
-- **Voice**: ElevenLabs
-- **Styling**: Tailwind CSS / Custom UI
+Voice-controlled AI battle arena prototype (Next.js frontend) with a production-readiness roadmap for realtime voice gameplay.
 
 ## Project Structure
 
-This project is a monorepo containing the initial configuration and the Next.js dashboard/app.
-
-- `mistral-dashboard/`: The main Next.js application containing the game interface, leaderboard, and server actions.
-- `readme.md`: This file.
+- `mistral-dashboard/` – Next.js app, UI, routes, components.
+- `.github/workflows/` – CI workflow.
+- `mistral-dashboard/docs/architecture-audit.md` – architecture analysis and prioritized actions.
+- `mistral-dashboard/docs/production-readiness.md` – what is fixed now vs what remains.
 
 ## Setup
 
-1. Navigate to the `mistral-dashboard` directory: `cd mistral-dashboard`
-2. Install dependencies: `npm install`
-3. Run the development server: `npm run dev`
+```bash
+cd mistral-dashboard
+cp .env.example .env.local
+npm install
+npm run dev
+```
 
-Open [http://localhost:3000](http://localhost:3000) to view the application in your browser.
+## Current Status
 
-## Features
+- ✅ Core UI routes available (`/`, `/play`, `/leaderboard`, `/profile`, `/demo`).
+- ✅ Security headers configured in Next.js.
+- ✅ Baseline CI checks (install, typecheck, lint, build).
+- ⚠️ Realtime voice ingestion/orchestration and persistent backend are not yet implemented.
 
-- **Voice Controls**: Speak your commands directly using real-time voice processing.
-- **Adaptive AI NPCs**: Characters powered by Mistral models that react intelligently to your actions.
-- **Leaderboard**: Compete with other players worldwide.
-- **Modern UI**: Clean and dark-themed aesthetics.
+## Production Readiness Docs
 
-## Hackathon Details
+- Architecture audit + prioritized P0/P1/P2 actions:
+  - `mistral-dashboard/docs/architecture-audit.md`
+- Production checklist and deployment baseline:
+  - `mistral-dashboard/docs/production-readiness.md`
 
-Built for the **Mistral Worldwide hackathon - Online edition**. 
+## Hackathon Context
 
-Focus: *Best Voice Use Case* and *Best Video Game Project*.
+Built for the **Mistral Worldwide Hackathon** with focus on voice gameplay and adaptive AI combat loops.
